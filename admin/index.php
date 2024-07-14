@@ -9,12 +9,22 @@ require_once '../commons/model.php';
 require_file(PATH_CONTROLLER_ADMIN);
 require_file(PATH_MODEL_ADMIN);
 
+
 //điều hướng
 $act = $_GET['act'] ?? '/';
+
+//Kiểm tra xem user đã đăng nhập chưa
+middleware_auth_check($act);
+
 
  match ($act) {
     '/' => dashboard(),
 
+    //authen
+    'login'=> authenShowFormLogin(),
+    'logout' => authenLogout(),
+
+    
 
     //user
     'users' => userListAll(),
