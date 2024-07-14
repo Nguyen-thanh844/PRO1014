@@ -12,7 +12,7 @@ if(!function_exists('getUserAdminByEmailAndPassword')){
             $stmt->execute();
             return $stmt->fetch();
         } catch (\Exception $e) {
-            debug($e);
+            debug($e);//
         }
     }
 }

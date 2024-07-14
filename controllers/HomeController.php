@@ -1,6 +1,6 @@
 <?php
-function homeindex(){
-    $users = getAllUser();
+function homeIndex(){
+    $view = 'home';
     
-    require_once PATH_VIEW .'home.php';
+    require_once PATH_VIEW .'layouts/master.php';
 }

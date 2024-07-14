@@ -1,4 +1,3 @@
-
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
@@ -91,6 +90,7 @@
                 <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=category">Quản lý danh mục</a>
                 <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=products">Quản lý sản phẩm</a>
                 <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=users">Quản lý tài khoản</a>
+                <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=orders">Quản lý đơn hàng</a>
             </div>
         </div>
     </li>

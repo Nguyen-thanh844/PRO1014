@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Chi tiết người dùng: <?= $user['name'] ?> </h1>
+    <h1>Chi tiết người dùng: <?= $user['username'] ?> </h1>
     <table class="table">
         <thead class="table-dark">
             <tr>
@@ -20,7 +20,7 @@
         </tr>
         <tbody>
             <tr>
-                <td><?= $user['name'] ?></td>
+                <td><?= $user['username'] ?></td>
                 <td><?= $user['email'] ?></td>
             </tr>
         </tbody>
