@@ -18,11 +18,11 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>mã đơn hàng</th>
-                            <th> tên người đặt</th>
-                            <th>số điện thoại</th>
-                            <th>tổng tiền</th>
-                            <th>trạng thái đơn hàng</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Tên người đặt</th>
+                            <th>Số điện thoại</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái đơn hàng</th>
                             <th>Hành động</th>
                         </tr>
                     </thead>
@@ -36,7 +36,8 @@
                                 <td><?= $order['thanhtien'] ?></td>
                                 <td><?= $order['trangthai']
                                         ? '<span class="badge badge-success">xác nhận</span>'
-                                        : '<span class="badge badge-warning">chưa xác nhận</span>' ?></td>
+                                        : '<span class="badge badge-warning">chưa xác nhận</span>' ?>
+                                </td>
                                 <td>
                                     <a class="btn btn-success" href="<?= BASE_URL_ADMIN ?>?act=order-detail&id=<?= $order['id'] ?>">Xem chi tiết</a>
                                     <a class="btn btn-warning" href="<?= BASE_URL_ADMIN ?>?act=order-update&id=<?= $order['id'] ?>">Sửa</a>

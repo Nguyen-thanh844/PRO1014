@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //require file commons
 require_once '../commons/env.php';
 require_once '../commons/helper.php';
@@ -14,15 +14,15 @@ require_file(PATH_MODEL_ADMIN);
 $act = $_GET['act'] ?? '/';
 
 //Kiểm tra xem user đã đăng nhập chưa
-// middleware_auth_check($act);
+middleware_auth_check($act);
 
 
  match ($act) {
     '/' => dashboard(),
 
     // //authen
-    // 'login'=> authenShowFormLogin(),
-    // 'logout' => authenLogout(),
+    'login'=> authenShowFormLogin(),
+    'logout' => authenLogout(),
 
     
 

@@ -62,8 +62,8 @@ if (!function_exists('listAll')) {
     {
         try {
 
-            $sql = "SELECT * FROM $tableName ORDER BY product_id DESC";
-
+            // $sql = "SELECT * FROM $tableName ORDER BY product_id DESC";
+            $sql = "SELECT pr.product_id, pr.product_name,pr.price, pr.so_luong , pr.image, ct.category_id FROM products AS pr INNER JOIN categories AS ct ON ct.id = pr.category_id;";
             $stmt = $GLOBALS['conn']->prepare($sql);
 
             $stmt->execute();

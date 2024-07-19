@@ -24,9 +24,9 @@
                     </thead>
 
                     <tbody>
-                        <?php foreach ($categories as $category) : ?>
+                        <?php foreach ($categories as $key => $category) : ?>
                             <tr>
-                                <td><?= $category['id'] ?></td>
+                                <td><?= $key + 1 ?></td>
                                 <td><?= $category['name'] ?></td>
                                 <td>
                                     <a class="btn btn-warning" href="<?= BASE_URL_ADMIN ?>?act=category-update&id=<?= $category['id'] ?>">Sửa</a>

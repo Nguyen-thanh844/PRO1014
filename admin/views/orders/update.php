@@ -17,7 +17,7 @@
 
                         <div class="mb-3">
                             <label for="trangthai" class="form-label">Trạng thái đơn hàng:</label>
-                            <select name="trangthai" id="trangthai" class="form-control">
+                            <select name="trangthai"  class="form-control">
                                 <option <?= $order['trangthai'] == 1 ? 'selected' : null ?> value="1">Xác nhận </option>
                                 <option <?= $order['trangthai'] == 0 ? 'selected' : null ?> value="0">Chưa xác nhận</option>
                                 <option <?= $order['trangthai'] == 1 ? 'selected' : null ?> value="1"> đang giao</option>
@@ -27,9 +27,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="trangthaithanhtoan" class="form-label">Trạng thái thanh toán:</label>
-                            <select name="trangthaithanhtoan" id="trangthaithanhtoan" class="form-control">
-                                <option <?= $order['trangthaithanhtoan'] == 1 ? 'selected' : null ?> value="1">chưa thanh toán</option>
-                                <option <?= $order['trangthaithanhtoan'] == 0 ? 'selected' : null ?> value="0">đã thanh toán</option>
+                            <select name="trangthaithanhtoan" class="form-control">
+                                <option <?= $order['trangthaithanhtoan'] == 1 ? 'selected' : null ?> value="1">Đã thanh toán</option>
+                                <option <?= $order['trangthaithanhtoan'] == 0 ? 'selected' : null ?> value="0">Chưa thanh toán</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Nhập</button>

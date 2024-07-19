@@ -19,17 +19,17 @@
                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__language">
-                            <img src="assets/client/img/language.png" alt="">
-                            <div>English</div>
+                            <i class="fa fa-user"></i>
+
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a href="#">Spanis</a></li>
-                                <li><a href="#">English</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
                             </ul>
                         </div>
-                        <div class="header__top__right__auth">
+                        <!-- <div class="header__top__right__auth">
                             <a href="#"><i class="fa fa-user"></i> Login</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

@@ -22,20 +22,17 @@
                         <th>
                             <?php
                             switch ($fieldName) {
-                                case 'image':
-                                    echo '<img src="' . htmlspecialchars($value) . '" alt="Product Image" style="max-width: 200px; height: auto;">';
-                                    break;
-                                case 'category_id':
+                                
+                                case 'trangthaithanhtoan':
                                     echo $value
-                                        ? 'Balo Nam'
-                                        : 'Balo Nu';
+                                        ? '<span class="badge badge-success">Đã thanh toán</span>'
+                                        : '<span class="badge badge-warning">Chưa thanh toán</span>';
                                     break;
                                 default:
-                                    echo htmlspecialchars($value);
+                                    echo $value;
                                     break;
                             }
                             ?>
-                        </th>
                     </tr>
                 <?php endforeach; ?>
             </table>

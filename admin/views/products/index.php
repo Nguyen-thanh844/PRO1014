@@ -23,6 +23,8 @@
                             <th>Giá</th>
                             <th>Số lượng</th>
                             <th>Danh mục</th>
+                            <th>Created_at</th>
+                            <th>Updated_at</th>
                             <th>Hành động</th>
                         </tr>
                     </thead>
@@ -30,16 +32,18 @@
                     <tbody>
 
 
-                        <?php foreach ($products as $product) : ?>
+                        <?php foreach ($products as $key => $product) : ?>
                             <tr>
-                                <td><?= $product['product_id'] ?></td>
+                                <td><?= $key + 1 ?></td>
                                 <td><?= $product['product_name'] ?></td>
                                 <td>
                                     <img src="<?= $product['image'] ?>" alt="" width="100px">
                                 </td>
-                                <td><?= $product['price'] ?></td>
+                                <td><?= $product['image,'] ?></td>
                                 <td><?= $product['so_luong'] ?></td>
                                 <td><?= $product['category_id'] ?></td>
+                                <td><?= $product['created_at'] ?></td>
+                                <td><?= $product['updated_at'] ?></td>
                                 <td>
                                     <a class="btn btn-success" href="<?= BASE_URL_ADMIN ?>?act=product-detail&product_id=<?= $product['product_id'] ?>">Xem chi tiết</a>
                                     <a class="btn btn-warning" href="<?= BASE_URL_ADMIN ?>?act=product-update&product_id=<?= $product['product_id'] ?>">Sửa</a>

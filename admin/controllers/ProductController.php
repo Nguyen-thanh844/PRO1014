@@ -13,8 +13,21 @@ function productListAlls()
 
     require_once PATH_VIEW_ADMIN . 'layouts/master.php';
 }
+// function categoryAll()
+// {
+//     // $title = 'Danh sách danh mục';
+//     // $view = 'categories/index';
+//     $script = 'datatable';
+//     $script2 = 'categories/script';
+//     $style = 'datatable';
+
+//     $categories = listAll('categories');
+
+//     require_once PATH_VIEW_ADMIN . 'layouts/master.php';
+// }
 function productShowOnes($product_id)
 {
+    $categories = listAll('categories');
     $product = showOneProduct('products', $product_id);
     if (empty($product)) {
         e404();
@@ -45,9 +58,9 @@ function productShowOnes($product_id)
 // }
 function productCreates()
 {
-    $title = 'Danh sách sản phẩm';
+    $title = 'Thêm mới sản phẩm';
     $view = 'products/create';
-
+    $categories = listAll('categories');
     if (!empty($_POST)) {
         // Process the uploaded image
         $image = $_FILES['image'];
@@ -87,7 +100,8 @@ function productCreates()
             'image' => $imagePath,
             'price' => $_POST['price'],
             'so_luong' => $_POST['so_luong'],
-            'category_id' => $_POST['category_id']
+            'category_id' => $_POST['category_id'],
+           
         ];
         insert('products', $data);
         header('Location: ' . BASE_URL_ADMIN . '?act=products');
@@ -100,6 +114,7 @@ function productCreates()
 function productUpdates($product_id)
 {
     $product = showOneProduct('products', $product_id);
+    $categories = listAll('categories');
     if (empty($product)) {
         e404();
     }

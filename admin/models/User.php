@@ -1,9 +1,9 @@
 <?php
-if(!function_exists('getUserAdminByEmailAndPassword')){
-    function getUserAdminByEmailAndPassword($email,$password)
+if(!function_exists('getUserAdmin')){
+    function getUserAdmin($email,$password)
     {
         try {
-            $sql = 'SELECT * FROM users WHERE email = :email AND password = :password AND type = 1 LIMIT 1';
+            $sql = "SELECT * FROM users WHERE email = :email AND password = :password AND type = 1 LIMIT 1";
             $stmt = $GLOBALS['conn']->prepare($sql);
 
             $stmt->bindParam(':email', $email);
