@@ -43,7 +43,7 @@
                                 <option value="0">Balo Thời Trang</option>
                                 <option value="0">Balo Hot</option> -->
                                 <?php foreach ($categories as $category) : ?>
-                                    <option value="<?= $category['id'] ?>"><?= $category['category_id'] ?></option>
+                                    <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>

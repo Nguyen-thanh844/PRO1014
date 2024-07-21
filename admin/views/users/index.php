@@ -20,7 +20,6 @@
                         <tr>
                             <th>STT</th>
                             <th>Họ và Tên</th>
-
                             <th>Email</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>

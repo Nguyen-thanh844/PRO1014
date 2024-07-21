@@ -60,7 +60,7 @@ function userUpdate($id)
             'type' => $_POST['type'],
         ];
         update('users', $id, $data);
-        header('Location: ' . BASE_URL_ADMIN . '?act=users&id' . $id);
+        header('Location: ' . BASE_URL_ADMIN . '?act=users-update&id=' . $id);
         exit();
     }
     require_once PATH_VIEW_ADMIN . 'layouts/master.php';

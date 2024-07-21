@@ -42,7 +42,7 @@ function orderUpdates($id)
             
         ];
         update('orders', $id, $data);
-        header('Location: ' . BASE_URL_ADMIN . '?act=orders&id' . $id);
+        header('Location: ' . BASE_URL_ADMIN . '?act=orders-update&id' . $id);
         exit();
     }
     require_once PATH_VIEW_ADMIN . 'layouts/master.php';

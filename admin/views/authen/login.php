@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +33,10 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                                <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/avatar-trang-4.jpg" width="326px" alt="">
+
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -48,10 +50,10 @@
                                     <?php endif; ?>
                                     <form action="" method="POST" class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"  name="email"  placeholder="Enter Email Address...">
+                                            <input type="email" class="form-control form-control-user" name="email" placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"  name="password" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
                                         </div>
                                         <!-- <div class="form-group">
                                             <div class="custom-control custom-checkbox small">

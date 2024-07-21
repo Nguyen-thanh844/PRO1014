@@ -39,9 +39,9 @@
                                 <td>
                                     <img src="<?= $product['image'] ?>" alt="" width="100px">
                                 </td>
-                                <td><?= $product['image,'] ?></td>
+                                <td><?= $product['price'] ?></td>
                                 <td><?= $product['so_luong'] ?></td>
-                                <td><?= $product['category_id'] ?></td>
+                                <td><?= $product['name'] ?></td>
                                 <td><?= $product['created_at'] ?></td>
                                 <td><?= $product['updated_at'] ?></td>
                                 <td>

@@ -20,7 +20,7 @@
                             <select name="trangthai"  class="form-control">
                                 <option <?= $order['trangthai'] == 1 ? 'selected' : null ?> value="1">Xác nhận </option>
                                 <option <?= $order['trangthai'] == 0 ? 'selected' : null ?> value="0">Chưa xác nhận</option>
-                                <option <?= $order['trangthai'] == 1 ? 'selected' : null ?> value="1"> đang giao</option>
+                                <option <?= $order['trangthai'] == 0 ? 'selected' : null ?> value="0"> đang giao</option>
                                 <option <?= $order['trangthai'] == 0 ? 'selected' : null ?> value="0">đã giao</option>
                                 <option <?= $order['trangthai'] == 0 ? 'selected' : null ?> value="0">hủy</option>
                             </select>

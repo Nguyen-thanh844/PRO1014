@@ -14,6 +14,6 @@ $act = $_GET['act'] ?? '/';
 
  match($act){
     '/' => homeIndex(),
-    'user-detail' => userDetail($_GET['id']),
+    // 'user-detail' => userDetail($_GET['id']),
 };
 require_once './commons/disconnect-db.php';
