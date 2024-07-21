@@ -23,8 +23,8 @@
 
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Register</a></li>
+                                <li><a href="<?= BASE_URL ?>?act=login-client">Login</a></li>
+                                <li><a href="<?= BASE_URL ?>?act=logup-client">Register</a></li>
                             </ul>
                         </div>
                         <!-- <div class="header__top__right__auth">
